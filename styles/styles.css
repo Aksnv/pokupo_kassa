@@ -47,7 +47,6 @@
 body {
   font-family: 'proxima_nova_rgregular';
   font-size: 15px;
-  font-weight: 400;
   font-style: normal;
   margin: 0;
   padding: 0;
@@ -64,7 +63,6 @@ body {
 h2 {
   font-family: 'proxima_nova_blblack';
   font-size: 30px;
-  font-weight: 900;
   text-align: center;
 }
 
@@ -75,6 +73,18 @@ ul {
 
 strong {
   font-family: 'proxima_nova_thextrabold';
+}
+
+a.button {
+  display: block;
+  width: 326px;
+  height: 66px;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -104,7 +114,6 @@ strong {
 
 .header__logo {
   float: left;
-  margin-left: 30px;
 }
 
 .header__logo img {
@@ -156,7 +165,7 @@ strong {
   text-transform: uppercase;
   color: #ff8c00;
   border-bottom: 1px dashed transparent;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .header__menu-link:hover {
@@ -176,6 +185,53 @@ strong {
 /* Promo */
 
 .promo {
-  background: linear-gradient(to right, #39A9B5, #A8D9DE);
+  min-height: 596px;
+  background-image: linear-gradient(to right, #39A9B5, #A8D9DE);
+  background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.promo .container {
+  min-height: 596px;
+  background-image: url("../images/1400x500.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.promo p,
+.promo ul {
+  width: 520px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.promo p > strong {
+  display: block;
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 46px;
+  line-height: 62px;
+  margin-bottom: 42px;
+  padding-top: 30px;
+}
+
+.promo ul {
+  list-style-type: disc;
+  margin-bottom: 50px;
+  padding-left: 50px;
+}
+
+.promo ul > li {
+  margin-bottom: 10px;
+}
+
+.promo a.button {
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  transition: all 0.3s;
+}
+
+.promo a.button:hover {
+  border: 3px solid #ff8c00;
+  background-color: #ff8c00;
 }
