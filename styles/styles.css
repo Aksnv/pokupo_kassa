@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('../fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_thextrabold';
+  src: url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_blblack';
+  src: url('../fonts/proxima_nova_black-webfont.woff2') format('woff2'),
+       url('../fonts/proxima_nova_black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main layout styles */   
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'proxima_nova_rgregular';
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.container {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'proxima_nova_blblack';
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+strong {
+  font-family: 'proxima_nova_thextrabold';
+}
+
+.inline-link {
+  font-family: 'proxima_nova_blblack';
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  text-decoration: none;
+  border-bottom: 1px solid #fcbd96;
+  color: #fa7b2e;
+}
+
+.inline-link:hover {
+  opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 9px
+}
+
+::-webkit-scrollbar-track {
+    background: #fff
+}
+
+::-webkit-scrollbar-thumb {
+    color: #ffa800;
+    background: #ffa800
+}
+
+/* Header */
+
+/*.header {
+  height: 900px;
+  background-image: url("../images/bg-top.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: #fff;
+}
+
+.header__logo {
+  float: left;
+  margin-left: 99px; 
+  margin-bottom: 120px;
+}*/
