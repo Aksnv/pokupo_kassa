@@ -42,15 +42,15 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'proxima_nova_rgregular';
   font-size: 15px;
   font-style: normal;
-  margin: 0;
-  padding: 0;
-  color: #000;
+  color: #ffffff;
 }
 
 .container {
@@ -61,9 +61,12 @@ body {
 }
 
 h2 {
-  font-family: 'proxima_nova_blblack';
-  font-size: 30px;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
+  margin-bottom: 24px;
+  padding-top: 36px;
 }
 
 ul {
@@ -127,7 +130,7 @@ a.button {
 
 .header__menu {
   float: right;
-  margin-top: 10px;
+  margin-top: 22px;
 }
 
 .header__menu li {
@@ -185,14 +188,14 @@ a.button {
 /* Promo */
 
 .promo {
-  min-height: 596px;
+  min-height: 590px;
+  padding-bottom: 40px;
   background-image: linear-gradient(to right, #39A9B5, #A8D9DE);
   background-repeat: no-repeat;
   color: #ffffff;
 }
 
 .promo .container {
-  min-height: 596px;
   background-image: url("../images/1400x500.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -205,13 +208,17 @@ a.button {
   line-height: 24px;
 }
 
+.promo p {
+  margin-bottom: 24px;
+}
+
 .promo p > strong {
   display: block;
   font-family: 'proxima_nova_thextrabold';
   font-size: 46px;
   line-height: 62px;
-  margin-bottom: 42px;
-  padding-top: 30px;
+  margin-bottom: 46px;
+  padding-top: 48px;
 }
 
 .promo ul {
@@ -221,7 +228,7 @@ a.button {
 }
 
 .promo ul > li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .promo a.button {
@@ -234,4 +241,150 @@ a.button {
 .promo a.button:hover {
   border: 3px solid #ff8c00;
   background-color: #ff8c00;
+}
+
+/* How-it-work */
+
+.how-it-work {
+  min-height: 700px;
+  padding-bottom: 40px;
+  background-color: #808080;
+  color: #ffffff;
+}
+
+.how-it-work__item {
+  position: relative;
+  width: 50%;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 22px;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+.how-it-work__item--left {
+  float: left;
+  text-align: right;
+  margin-left: 1px;
+  padding-right: 64px;
+  border-right: 2px solid #ffffff;
+}
+
+.how-it-work__item--right {
+  float: right;
+  margin-right: 1px;
+  padding-left: 64px;
+  border-left: 2px solid #ffffff;
+}
+
+.how-it-work__item:last-child {
+  border: none;
+}
+
+.how-it-work__item::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  background-color: #808080;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.how-it-work__item--left::before {
+  right: -34px;
+}
+
+.how-it-work__item--right::before {
+  left: -34px;
+}
+
+.how-it-work__item::after {
+  position: absolute;
+  top: 12px;
+  content: "";
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-image: url("../images/sprite.fw.png");
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.how-it-work__item--left::after {
+  right: -23px;
+}
+
+.how-it-work__item--right::after {
+  left: -23px;
+}
+
+.how-it-work__item--1::after {
+  background-position: -7px -7px;
+}
+
+.how-it-work__item--2::after {
+  background-position: -57px -7px;
+}
+
+.how-it-work__item--3::after {
+  background-position: -107px -7px;
+}
+
+.how-it-work__item--4::after {
+  background-position: -156px -7px;
+}
+
+.how-it-work__item--5::after {
+  background-position: -205px -8px;
+}
+
+.how-it-work__item span,
+.how-it-work__item ol {
+  display: block;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.how-it-work__item ol {
+  padding-left: 30px;
+}
+
+.how-it-work__item ol > li {
+  margin-bottom: 5px;
+}
+
+.how-it-work__item ol > li:first-child {
+  margin-top: 16px;
+}
+
+/* Benefits */
+
+.benefits {
+  overflow: hidden;
+  color: #696969;
+}
+
+
+/* Price */
+
+.price {
+  min-height: 590px;
+  background-image: linear-gradient(to right, #39A9B5, #A8D9DE);
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/* Integrations */
+
+.integrations {
+  color: #696969;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #a9a9a9;
 }
