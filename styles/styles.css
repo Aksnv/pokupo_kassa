@@ -55,6 +55,7 @@ body {
 }
 
 .container {
+  overflow: hidden;
   position: relative;
   width: 960px;
   margin: 0 auto;
@@ -76,20 +77,6 @@ strong {
   font-family: 'proxima_nova_thextrabold';
 }
 
-.inline-link {
-  font-family: 'proxima_nova_blblack';
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 30px;
-  text-decoration: none;
-  border-bottom: 1px solid #fcbd96;
-  color: #fa7b2e;
-}
-
-.inline-link:hover {
-  opacity: 0.8;
-}
-
 ::-webkit-scrollbar {
     width: 4px;
     padding-right: 9px
@@ -106,16 +93,89 @@ strong {
 
 /* Header */
 
-/*.header {
-  height: 900px;
-  background-image: url("../images/bg-top.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
-  color: #fff;
+.header {
+  min-height: 80px;
+  background-color: #ffffff;
+}
+
+.header .container {
+  min-height: 80px;
 }
 
 .header__logo {
   float: left;
-  margin-left: 99px; 
-  margin-bottom: 120px;
-}*/
+  margin-left: 30px;
+}
+
+.header__logo img {
+  display: block;
+  width: auto;
+  max-width: 109px;
+  height: auto;
+  max-height: 55px;
+  margin-top: 10px;
+}
+
+.header__menu {
+  float: right;
+  margin-top: 10px;
+}
+
+.header__menu li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 27px;
+}
+
+.header__menu li:last-child {
+  margin-right: 0;
+}
+
+.header__menu li::after {
+  position: absolute;
+  top: 0;
+  right: -16px;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #ff8c00;
+}
+
+.header__menu li:last-child::after {
+  display: none;
+}
+
+.header__menu-link {
+  display: block;
+  font-family: 'proxima_nova_rgbold';
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ff8c00;
+  border-bottom: 1px dashed transparent;
+  transition: all 1s;
+}
+
+.header__menu-link:hover {
+  border-bottom: 1px dashed #ff8c00;
+}
+
+.header__link {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.header__link a {
+  color: #6b8e23;
+}
+
+/* Promo */
+
+.promo {
+  background: linear-gradient(to right, #39A9B5, #A8D9DE);
+  color: #ffffff;
+}
