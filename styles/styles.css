@@ -54,10 +54,13 @@ body {
 }
 
 .container {
-  overflow: hidden;
   position: relative;
   width: 960px;
   margin: 0 auto;
+}
+
+section {
+  padding-bottom: 40px;
 }
 
 h2 {
@@ -189,7 +192,6 @@ a.button {
 
 .promo {
   min-height: 590px;
-  padding-bottom: 40px;
   background-image: linear-gradient(to right, #39A9B5, #A8D9DE);
   background-repeat: no-repeat;
   color: #ffffff;
@@ -247,9 +249,12 @@ a.button {
 
 .how-it-work {
   min-height: 700px;
-  padding-bottom: 40px;
   background-color: #808080;
   color: #ffffff;
+}
+
+.how-it-work ul {
+  overflow: hidden;
 }
 
 .how-it-work__item {
@@ -363,8 +368,74 @@ a.button {
 /* Benefits */
 
 .benefits {
-  overflow: hidden;
   color: #696969;
+}
+
+.benefits__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 188px;
+  line-height: 20px;
+  text-align: center;
+  padding: 20px 10px;
+  background-color: #8fbc8f;
+  color: #ffffff;
+}
+
+.benefits__item p:last-child {
+  margin-top: 35px;
+}
+
+.benefits__item p > strong {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 188px;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 20px;
+  line-height: 24px;
+  padding-bottom: 160px;
+}
+
+.benefits__item p > strong::after {
+  position: absolute;
+  left: 14px;
+  bottom: 0;
+  content: "";
+  display: block;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.benefits__item--1 p > strong::after {
+  left: 27px;
+  width: 114px;
+  height: 150px;
+  background-position: -4px -56px;
+}
+
+.benefits__item--2 p > strong::after {
+  width: 140px;
+  height: 140px;
+  background-position: -122px -62px;
+}
+
+.benefits__item--3 p > strong::after {
+  width: 140px;
+  height: 139px;
+  background-position: -269px -57px;
+}
+
+.benefits__item--4 p > strong::after {
+  width: 139px;
+  height: 140px;
+  background-position: -416px -57px;
+}
+
+.benefits__item--5 p > strong::after {
+  width: 140px;
+  height: 140px;
+  background-position: -562px -57px;
 }
 
 
