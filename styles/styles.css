@@ -188,6 +188,10 @@ a.button {
   color: #6b8e23;
 }
 
+.header__link a:hover {
+  opacity: 0.7;
+}
+
 /* Promo */
 
 .promo {
@@ -506,5 +510,38 @@ a.button {
 /* Footer */
 
 .footer {
+  min-height: 100px;
+  padding-top: 32px;
   background-color: #a9a9a9;
+}
+
+.footer a {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer a:hover {
+  opacity: 0.7;
+}
+
+.footer a.footer-link--homepage {
+  margin-right: 95px;
+}
+
+.footer a.footer-link--support {
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+.footer a.footer-link--social {
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 42px;
+  height: 39px;
+  font-size: 0;
+  background-image: url("../images/social/telegram_rHQsEPH.png");
 }
