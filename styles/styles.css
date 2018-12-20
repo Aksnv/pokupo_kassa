@@ -1,12 +1,4 @@
 @font-face {
-  font-family: 'proxima_nova_ltlight';
-  src: url('../fonts/proxima_nova_light-webfont.woff2') format('woff2'),
-       url('../fonts/proxima_nova_light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'proxima_nova_rgregular';
   src: url('../fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
        url('../fonts/proxima_nova_regular-webfont.woff') format('woff');
@@ -26,14 +18,6 @@
   font-family: 'proxima_nova_thextrabold';
   src: url('../fonts/proxima_nova_extrabold-webfont.woff2') format('woff2'),
        url('../fonts/proxima_nova_extrabold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'proxima_nova_blblack';
-  src: url('../fonts/proxima_nova_black-webfont.woff2') format('woff2'),
-       url('../fonts/proxima_nova_black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -442,7 +426,6 @@ a.button {
   background-position: -562px -57px;
 }
 
-
 /* Price */
 
 .price {
@@ -450,6 +433,122 @@ a.button {
   background-image: linear-gradient(to right, #39A9B5, #A8D9DE);
   background-repeat: no-repeat;
   color: #ffffff;
+}
+
+.price h3 {
+  position: relative;
+  font-family: 'proxima_nova_thextrabold';
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+
+.price h3 > span {
+  display: block;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.price h3::after {
+  position: absolute;
+  bottom: -17px;
+  left: calc(50% - 25px);
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #ffffff;
+}
+
+.price__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  text-align: center;
+  padding-top: 230px;
+}
+
+.price__item::before {
+  position: absolute;
+  top: 0;
+  content: "";
+  display: block;
+  background-image: url("../images/sprite.fw.png");
+}
+
+.price__item--startup::before {
+  left: calc(50% - 95px);
+  width: 189px;
+  height: 199px;
+  background-position: -8px -215px;
+}
+
+.price__item--business::before {
+  left: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  background-position: -205px -215px;
+}
+
+.price__item  ul {
+  margin-bottom: 40px;
+}
+
+.price__item li {
+  margin-bottom: 5px;
+}
+
+.price__item p {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.price section {
+  width: 300px;
+  margin: 0 auto;
+  padding-bottom: 0;
+}
+
+.price section > ul {
+  list-style-type: disc;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.price section > ul li {
+  margin-bottom: 7px;
+}
+
+.price section > p {
+  margin-bottom: 10px;
+}
+
+.price section > p strong {
+  font-family: 'proxima_nova_rgbold';
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.price section + p {
+  text-align: center;
+}
+
+.price a.button {
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  transition: all 0.3s;
+}
+
+.price a.button:hover {
+  border: 3px solid #ff8c00;
+  background-color: #ff8c00;
 }
 
 /* Integrations */
