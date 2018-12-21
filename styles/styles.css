@@ -813,10 +813,16 @@ a.button {
     right: auto;
   }
 
-  /* Benefits */
+  /* Price */
 
-  .benefits__item {
-    
+  .price__item {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .price section {
+    margin-top: 20px;
+    padding-left: 20px;
   }
 
 }
