@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", function(e) {
     el[i].style.height = max + 20 + "px";
   }
 });
+
+var menuButton = document.querySelector(".header__menu-button");
+var menu = document.querySelector(".header__menu");
+menuButton.addEventListener("click", function() {
+  menu.classList.toggle("header__menu--visible");
+  menuButton.classList.toggle("header__menu-button--close");
+});
