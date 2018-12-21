@@ -783,6 +783,34 @@ a.button {
     padding-top: 30px;
   }
 
+  /* How-it-work */
 
+  .how-it-work__item {
+    width: 280px;
+    text-align: left;
+  }
+
+  .how-it-work__item--left,
+  .how-it-work__item--right {
+    float: none;
+    margin-left: 35px;
+  }
+
+  .how-it-work__item--left {
+    padding-left: 64px;
+    padding-right: 0;
+    border-left: 2px solid #ffffff;
+    border-right: none;
+  }
+
+  .how-it-work__item--left::before {
+    left: -34px;
+    right: auto;
+  }
+
+  .how-it-work__item--left::after {
+    left: -23px;
+    right: auto;
+  }
 
 }
