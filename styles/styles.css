@@ -718,7 +718,7 @@ a.button {
     left: 0;
     display: block;
     width: 320px;
-    height: 320px;
+    height: 360px;
     text-align: center;
     padding-top: 90px;
     background-color: #ffffff;
@@ -759,6 +759,28 @@ a.button {
     height: 24px;
     background-position: -300px -11px;
     z-index: 3;
+  }
+
+  /* Promo */
+
+  .promo {
+    min-height: auto;
+  }
+
+  .promo .container {
+    background-image: none;
+  }
+
+  .promo p, 
+  .promo ul {
+    width: 320px;
+  }
+
+  .promo p > strong {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    padding-top: 30px;
   }
 
 
