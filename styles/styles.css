@@ -832,4 +832,17 @@ a.button {
     width: 320px;
   }
 
+  /* Footer */
+
+  .footer a {
+    display: block;
+    margin-right: 0;
+  }
+
+  .footer a.footer-link--social {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }

@@ -1,7 +1,7 @@
 
 var container = document.querySelector(".container");
 document.addEventListener("DOMContentLoaded", function(e) {
-  if (container.offsetWidth !== 320) {
+  if (container.offsetWidth > 320) {
     var elHeader = document.querySelectorAll(".benefits__item p > strong");
     var maxHeader = 0;
     for (var i = 0; i < elHeader.length; i++) {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(e) {
 });
 
 document.addEventListener("DOMContentLoaded", function(e) {
-  if (container.offsetWidth !== 320) {
+  if (container.offsetWidth > 320) {
     var el = document.querySelectorAll(".benefits__item");
     var max = 0;
     for (var i = 0; i < el.length; i++) {
